@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  src: url('/public/fonts/FranklinGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Franklin Gothic Condensed', 'Arial Narrow', Arial, sans-serif;
+  src: url('/public/fonts/FranklinGothicCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes numberRise {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.number-animation {
+  animation: numberRise 1s forwards;
+}
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 4px !important;
+    border-radius: 5px !important;
+    margin: 0 6px !important;
+}
+
+.swiper-pagination {
+    bottom: 2px !important;
+}
+
+.swiper-wrapper {
+    height: max-content !important;
+    width: max-content !important;
+    padding-bottom: 64px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #4F46E5 !important;
+}
+
+.swiper-slide.swiper-slide-active>.slide_active\:border-indigo-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.swiper-slide.swiper-slide-active>.group .slide_active\:text-gray-800 {
+    ---tw-text-opacity: 1;
+    color: rgb(31 41 55 / var(--tw-text-opacity));
+}
