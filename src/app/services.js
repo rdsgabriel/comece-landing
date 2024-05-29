@@ -12,9 +12,11 @@ const Services = () => {
 
   return (
     <div className='bg-white'>
-     <div className="p-4" style={{ backgroundImage: "url('/icone2.svg')", backgroundSize: 'cover' }}><h1 className=' text-4xl pt-10 md:text-7xl text-center font-franklin font-bold md:py-10 number-animation text-preto'>Nossos Serviços</h1>
+     <div className="p-4">
       <div className="flex md:flex-row-reverse flex-wrap px-10 py-10">
-      <div className={`w-full md:w-2/5 ${bgColor} p-4 text-center text-gray-600`}>foto exemplo</div>
+      <div className={`w-full md:w-2/5 ${bgColor} p-4 text-center text-gray-600`}>foto exemplo
+      </div>
+      
       <div className="w-full md:w-3/5 p-4 text-center text-gray-700 mb-4">
         <div className="flex flex-col">
           <div className="flex bg-gray-200">
@@ -38,25 +40,11 @@ const Services = () => {
             </button>
           </div>
           <div className={`${bgColor} w-full`} style={{ minHeight: '6rem' }}>
-            <ul className="list-disc text-left ml-10 m-1014">
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
-            </ul>
+           
           </div>
         </div>
       </div>
     </div></div>
-      
     </div>
   );
 };

@@ -43,12 +43,12 @@ const Mid = () => {
             objectPosition="center"
           />
         </div>
-        <div className="container mx-auto max-w-screen-lg items-center py-4 font-franklinheavy ">
+        <div className="container mx-auto max-w-screen-lg items-center py-4">
           <h1 className="text-white text-center text-4xl md:text-7xl font-bold">Marketing, Criatividade</h1>
-          <h1 className="text-center text-white text-4xl md:text-7xl y font-bold">& Soluções</h1>
+          <h1 className="text-center text-white text-4xl md:text-7xl font-bold">& Soluções</h1>
         </div>
 
-        <div className="flex justify-center py-10 font-franklin text-white space-x-4 md:space-x-12 pl-7">
+        <div className="flex justify-center py-10 text-white space-x-4 md:space-x-12 pl-7">
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl ">{number1}</h1>
             <h2 className="text-base md:text-xl">Anos de</h2>
@@ -66,11 +66,14 @@ const Mid = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center max-w-screen-lg">
-          <button className="bg-rosa hover:bg-rose-600 text-white font-franklin text-xl md:text-2xl font-bold rounded-full h-12 w-48">
-            Comece já
-          </button>
-        </div>
+        <div class="mt-12 text-center">
+      <a
+        href="#"
+        class="inline-block rounded bg-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-400"
+      >
+        Comece agora.
+      </a>
+    </div>
       </div>
     </div>
   );
