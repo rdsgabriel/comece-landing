@@ -5,7 +5,7 @@ const Ocean = () => {
     <div className="bg-preto py-4">
       <div className="flex flex-col md:flex-row mx-auto max-w-screen-lg w-full h-auto md:h-96 justify-around">
         <div className='flex-1 text-white flex flex-col justify-center font-franklin font-bold text-3xl md:text-5xl px-6 md:px-10'>
-          <h1 className='whitespace-nowrap'>um oceano de</h1>
+          <h1 className='whitespace-nowrap '>um oceano de</h1>
           <h1>ideias que</h1>
           <h1 className='bg-rosa rounded-md'>transformam.</h1>
         </div>

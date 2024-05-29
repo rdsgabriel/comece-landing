@@ -18,7 +18,7 @@ module.exports = {
         bege:'#ffffd7',
       },
       fontFamily: {
-        franklin: ['"Franklin Gothic Medium", "Franklin Gothic Heavy ']
+        franklin: ['"Franklin Gothic Medium", "Franklin Gothic Heavy"']
       }
     },
   },

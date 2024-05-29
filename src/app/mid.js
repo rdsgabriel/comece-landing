@@ -27,7 +27,7 @@ const useNumberAnimation = (initialNumber, finalNumber, intervalTime = 100) => {
 
 const Mid = () => {
   const number1 = useNumberAnimation(0, 14, 100);
-  const number2 = useNumberAnimation(0, 200, 5);
+  const number2 = useNumberAnimation(0, 200, 6);
   const number3 = useNumberAnimation(0, 52, 25);
 
   return (
@@ -48,7 +48,7 @@ const Mid = () => {
           <h1 className="text-center text-white text-4xl md:text-7xl y font-bold">& Soluções</h1>
         </div>
 
-        <div className="flex justify-center py-10 font-franklin text-white space-x-4 md:space-x-12 pl-10">
+        <div className="flex justify-center py-10 font-franklin text-white space-x-4 md:space-x-12 pl-7">
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl ">{number1}</h1>
             <h2 className="text-base md:text-xl">Anos de</h2>
