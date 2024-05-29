@@ -11,7 +11,7 @@ const Services = () => {
   };
 
   return (
-    <div className='bg-white'>
+    <div className='bg-preto'>
      <div className="p-4">
       <div className="flex md:flex-row-reverse flex-wrap px-10 py-10">
       <div className={`w-full md:w-2/5 ${bgColor} p-4 text-center text-gray-600`}>foto exemplo

@@ -5,6 +5,7 @@ import Services from "./services";
 import Video from "./video"
 import Notas from './notas'
 import Clientes from './clientes'
+import Time from "./time";
 import Footer from './footer'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Services/>
       <Clientes/>
       <Notas/>
+      <Time/>
       <Footer/>
     </main>
   );
