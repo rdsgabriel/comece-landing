@@ -39,8 +39,6 @@ const Mid = () => {
             alt="Logo"
             width={92}
             height={92}
-            objectFit="contain"
-            objectPosition="center"
           />
         </div>
         <div className="container mx-auto max-w-screen-lg items-center py-4">
@@ -66,10 +64,10 @@ const Mid = () => {
           </div>
         </div>
 
-        <div class="mt-12 text-center">
+        <div className="mt-12 text-center">
       <a
         href="#"
-        class="inline-block rounded bg-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-400"
+        className="inline-block rounded bg-preto bg-opacity-70 border border-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation"
       >
         Comece agora.
       </a>
