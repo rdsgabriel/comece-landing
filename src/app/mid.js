@@ -51,18 +51,18 @@ const Mid = () => {
         <div className="flex justify-center py-10 text-white space-x-4 md:space-x-12 pl-7">
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl ">{number1}</h1>
-            <h2 className="text-base md:text-xl">Anos de</h2>
-            <h2 className="text-base md:text-xl">Mercado</h2>
+            <h2 className="text-base md:text-lg">Anos de</h2>
+            <h2 className="text-base md:text-lg">Mercado</h2>
           </div>
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl">+{number2}</h1>
-            <h2 className="text-base md:text-xl">Clientes</h2>
-            <h2 className="text-base md:text-xl">Atendidos</h2>
+            <h2 className="text-base md:text-lg">Clientes</h2>
+            <h2 className="text-base md:text-lg">Atendidos</h2>
           </div>
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl">+{number3}</h1>
-            <h2 className="text-base md:text-xl">Marcas</h2>
-            <h2 className="text-base md:text-xl">Atendidas</h2>
+            <h2 className="text-base md:text-lg">Marcas</h2>
+            <h2 className="text-base md:text-lg">Atendidas</h2>
           </div>
         </div>
 

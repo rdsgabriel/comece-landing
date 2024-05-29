@@ -203,7 +203,7 @@ const Notas = () => {
     <div class="mt-12 text-center">
       <a
         href="#"
-        class="inline-block rounded bg-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-red-600 focus:outline-none focus:ring focus:ring-yellow-400"
+        class="inline-block rounded bg-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-400"
       >
         Comece agora.
       </a>
