@@ -2,9 +2,8 @@
 import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
-import comeceIcon from '../../public/icone2.svg';
 const Services = () => {
-  const [bgColor, setBgColor] = useState('bg-gray-100');
+  const [bgColor, setBgColor] = useState('bg-transparent');
 
   const handleButtonClick = (color) => {
     setBgColor(color);
@@ -12,36 +11,49 @@ const Services = () => {
 
   return (
     <div className='bg-preto'>
-     <div className="p-4">
-      <div className="flex md:flex-row-reverse flex-wrap px-10 py-10">
-      <div className={`w-full md:w-2/5 ${bgColor} p-4 text-center text-gray-600`}>foto exemplo
-      </div>
-      
-      <div className="w-full md:w-3/5 p-4 text-center text-gray-700 mb-4">
-        <div className="flex flex-col">
-          <div className="flex bg-gray-200">
+     <div className="p-4 py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+     <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Nossos Serviços</h2>
+     <div className="flex bg-preto">
             <button
               onClick={() => handleButtonClick('bg-green-500')}
-              className="flex-1 text-gray-700 text-center bg-gray-100 px-4 py-2 m-2 hover:bg-rosa"
+              className="flex-1 text-gray-700 bg-bege text-center py-2 m-2 rounded-r-xl hover:border hover:border-bege hover:bg-rosa hover:text-bege focus:bg-rosa focus:text-bege focus:border focus:border-bege"
             >
-              1
+             Marketing
             </button>
             <button
               onClick={() => handleButtonClick('bg-blue-500')}
-              className="flex-1 text-gray-700 text-center bg-gray-100 px-4 py-2 m-2 hover:bg-rosa"
+              className="flex-1 text-gray-700 bg-bege text-center py-2 m-2 rounded-r-xl hover:border hover:border-bege hover:bg-rosa hover:text-bege focus:bg-rosa focus:text-bege focus:border focus:border-bege"
             >
-              2
+             Desenvolvimento
             </button>
             <button
               onClick={() => handleButtonClick('bg-yellow-500')}
-              className="flex-1 text-gray-700 text-center bg-gray-100 px-4 py-2 m-2 hover:bg-rosa"
+              className="flex-1 text-gray-700 bg-bege text-center py-2 m-2 rounded-r-xl border-double hover:border hover:border-bege hover:bg-rosa hover:text-bege focus:bg-rosa focus:text-bege focus:border focus:border-bege"
             >
-              3
+             Design
             </button>
           </div>
-          <div className={`${bgColor} w-full`} style={{ minHeight: '6rem' }}>
-           
-          </div>
+      <div className="flex px-10 py-10">
+
+        
+      <div className={`w-full  ${bgColor} p-4 text-center text-bege border border-bege rounded-xl`}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+        distinctio alias voluptatum blanditiis laudantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.</p>
+      </div>
+      
+      <div className="w-full p-4 text-center text-bege mb-4">
+        
+          
+          <div className={`${bgColor} w-full border rounded-xl flex items-center justify-center border-bege min-h-full`} >
+          <p>foto</p>
         </div>
       </div>
     </div></div>

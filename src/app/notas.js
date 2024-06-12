@@ -4,9 +4,9 @@ const Notas = () => {
       <section className="bg-[url('/Elipse-1.svg')] bg-cover bg-preto  text-bege" >
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="mx-auto max-w-lg text-center">
-      <h2 className="text-3xl font-bold sm:text-4xl">Veja o que nossos clientes dizem:</h2>
+    <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Olha o que eles dizem:</h2>
 
-      <p className="mt-4 text-bege">
+      <p className="mt-4 text-bege tracking-tight leading-tight">
        Na <span className="text-rosa font-bold">Comece</span> acreditamos que a trânsparencia é o melhor caminho.
       </p>
     </div>
@@ -233,7 +233,7 @@ fill="#ffffd7" stroke="none">
         </p>
 
         </div>
-        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Youtube</h2>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Caralho</h2>
         
       </div>
 
@@ -278,7 +278,7 @@ fill="#ffffd7" stroke="none">
         </p>
 
         </div>
-        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Apple</h2>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Porra</h2>
         
       </div>
     </div>

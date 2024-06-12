@@ -1,7 +1,7 @@
 const Time = () => {
   return (
     <div className="bg-preto">
-      <h1 className="text-center p-10 text-4xl text-bege font-bold">Conheça nosso time</h1>
+      <h1 className="text-center p-10 text-4xl text-bege font-bold tracking-tight leading-tight">Conheça nosso time</h1>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 p-5">
       <div className="rounded-full pb-4">
 

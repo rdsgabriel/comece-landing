@@ -42,8 +42,8 @@ const Mid = () => {
           />
         </div>
         <div className="container mx-auto max-w-screen-lg items-center py-4">
-          <h1 className="text-rosa text-center text-4xl md:text-7xl font-bold">Marketing, Criatividade</h1>
-          <h1 className="text-center text-rosa text-4xl md:text-7xl font-bold">& Soluções</h1>
+          <h1 className="text-rosa text-center text-4xl md:text-7xl font-bold tracking-tight leading-tight">Marketing, Criatividade</h1>
+          <h1 className="text-center text-rosa text-4xl md:text-7xl font-bold tracking-tight leading-tight">& Soluções</h1>
         </div>
 
         <div className="flex justify-center py-10 text-rosa space-x-4 md:space-x-12 ml-8">
@@ -67,7 +67,7 @@ const Mid = () => {
         <div className="mt-12 text-center">
       <a
         href="#"
-        className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation"
+        className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation tracking-tight leading-tight"
       >
         Comece agora
       </a>
