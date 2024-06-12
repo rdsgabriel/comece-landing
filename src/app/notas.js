@@ -1,210 +1,294 @@
 
 const Notas = () => {
     return (
-      <section className="bg-preto text-white">
+      <section className="bg-[url('/Elipse-1.svg')] bg-cover bg-preto  text-bege" >
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="mx-auto max-w-lg text-center">
       <h2 className="text-3xl font-bold sm:text-4xl">Veja o que nossos clientes dizem:</h2>
 
-      <p className="mt-4 text-gray-300">
+      <p className="mt-4 text-bege">
        Na <span className="text-rosa font-bold">Comece</span> acreditamos que a trânsparencia é o melhor caminho.
       </p>
     </div>
 
-    <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-5 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       <div
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
+        className="block rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Netflix</h2>
+        
       </div>
 
       <div
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
+        className="block rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Facebook</h2>
+        
       </div>
 
       <div
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
+        className="block rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Google</h2>
+        
       </div>
 
       <div
-        className=" rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10 hidden md:block"
+        className="md:block hidden rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Vó Alzira</h2>
+        
       </div>
 
       <div
-        className="rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10 hidden md:block"
+        className="md:block hidden rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Youtube</h2>
+        
       </div>
 
       <div
-        className=" rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10 hidden md:block"
+        className=" rounded-xl border border-gray-800 p-4 shadow-xl transition hover:border-red-500/10 hover:shadow-red-500/10 md:block hidden"
       >
         <div className="flex">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="size-10 text-rosa"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="60.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="#ffffd7" stroke="none">
+<path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+<path d="M4440 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
+-1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
+-158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
+1348 -41 159 -146 275 -308 340 -45 18 -80 22 -264 27 l-211 5 47 120 c91 231
+159 342 277 456 82 78 150 122 298 196 130 63 140 72 162 129 29 75 -3 157
+-75 194 -33 16 -57 20 -138 18 -54 0 -114 -3 -133 -5z m-494 -485 c-60 -87
+-107 -175 -160 -300 -62 -146 -166 -453 -166 -490 0 -44 28 -95 68 -126 l35
+-27 328 -5 c311 -5 329 -6 355 -26 15 -11 37 -33 48 -48 21 -27 21 -37 21
+-646 0 -609 0 -619 -21 -646 -11 -15 -33 -37 -48 -48 -27 -21 -40 -21 -570
+-24 l-542 -2 -62 107 c-140 245 -192 432 -192 689 0 355 101 706 304 1062 114
+200 266 377 401 467 70 47 215 124 232 125 7 0 -7 -28 -31 -62z"/>
+</g>
         </svg>
 
-        <h2 className="mt-2 text-xl font-bold text-white ml-2 mb-5">Cliente X</h2></div>
-
-        <p className="mt-1 text-sm text-gray-300">
+        <p className="mt-6 mx-4 text-sm text-bege pt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
           distinctio alias voluptatum blanditiis laudantium.
         </p>
+
+        </div>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Apple</h2>
+        
       </div>
     </div>
 
     <div className="mt-12 text-center">
-      <a
+    <a
         href="#"
-        className="inline-block rounded bg-preto border border-rosa px-12 py-3 text-sm font-medium text-gray-100 transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400"
+        className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400"
       >
-        Comece agora.
+        Comece agora
       </a>
     </div>
   </div>

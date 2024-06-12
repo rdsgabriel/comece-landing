@@ -34,7 +34,7 @@ const Footer = () => {
       </a>
     </div>
 
-    <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="mt-16 flex justify-evenly md:grid md:grid-cols-1 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="text-center sm:text-left">
         <p className="text-lg font-medium text-bege">About Us</p>
 
@@ -85,8 +85,8 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-bege">Resources</p>
+      <div className="text-center sm:text-left hidden md:block">
+        <p className="text-lg font-medium text-bege ">Resources</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
@@ -115,8 +115,8 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="text-center sm:text-left">
-        <p className="text-lg font-medium text-bege">Helpful Links</p>
+      <div className="text-center sm:text-left hidden md:block">
+        <p className="text-lg font-medium text-bege ">Helpful Links</p>
 
         <ul className="mt-8 space-y-4 text-sm">
           <li>
@@ -146,7 +146,18 @@ const Footer = () => {
     </div>
 
     <div className="mt-16">
-      <ul className="flex justify-center gap-6 sm:justify-end">
+      
+
+      <div className="mt-16 sm:flex sm:items-center sm:justify-between">
+        <div className="flex justify-center text-rosa sm:justify-start">
+        <Image
+            src={comeceIcon}
+            alt="Logo"
+            width={92}
+            height={92}
+          />
+        </div>
+        <ul className="flex justify-center gap-6 pt-10 pb-5 md:pt-0 md:pb-0 md:pl-36">
         <li>
           <a
             href="#"
@@ -219,17 +230,6 @@ const Footer = () => {
 
         
       </ul>
-
-      <div className="mt-16 sm:flex sm:items-center sm:justify-between">
-        <div className="flex justify-center text-rosa sm:justify-start">
-        <Image
-            src={comeceIcon}
-            alt="Logo"
-            width={92}
-            height={92}
-          />
-        </div>
-
         <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
           Comece &copy; 2022. All rights reserved.
         </p>

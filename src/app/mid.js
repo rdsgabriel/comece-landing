@@ -31,7 +31,7 @@ const Mid = () => {
   const number3 = useNumberAnimation(0, 52, 25);
 
   return (
-    <div className="p-4" style={{ backgroundImage: "url('/image.png')", backgroundSize: 'cover' }}>
+    <div className="p-4 bg-[url('/teste-mobile.svg')] bg-cover md:bg-[url('/teste.svg')]">
       <div className="container mx-auto max-w-screen-lg items-center py-12 md:py-24">
         <div className="flex justify-center mb-6 number-animation">
           <Image
@@ -42,11 +42,11 @@ const Mid = () => {
           />
         </div>
         <div className="container mx-auto max-w-screen-lg items-center py-4">
-          <h1 className="text-white text-center text-4xl md:text-7xl font-bold">Marketing, Criatividade</h1>
-          <h1 className="text-center text-white text-4xl md:text-7xl font-bold">& Soluções</h1>
+          <h1 className="text-rosa text-center text-4xl md:text-7xl font-bold">Marketing, Criatividade</h1>
+          <h1 className="text-center text-rosa text-4xl md:text-7xl font-bold">& Soluções</h1>
         </div>
 
-        <div className="flex justify-center py-10 text-white space-x-4 md:space-x-12 pl-7">
+        <div className="flex justify-center py-10 text-rosa space-x-4 md:space-x-12 ml-8">
           <div className="w-28 h-28 flex flex-col">
             <h1 className="font-bold text-4xl md:text-5xl ">{number1}</h1>
             <h2 className="text-base md:text-lg">Anos de</h2>
@@ -67,9 +67,9 @@ const Mid = () => {
         <div className="mt-12 text-center">
       <a
         href="#"
-        className="inline-block rounded bg-preto bg-opacity-70 border border-rosa px-12 py-3 text-sm font-medium text-white transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation"
+        className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation"
       >
-        Comece agora.
+        Comece agora
       </a>
     </div>
       </div>
