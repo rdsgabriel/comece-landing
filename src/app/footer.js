@@ -1,21 +1,31 @@
-import React from 'react';
+'use client'
+import React, {useState} from 'react';
 import Image from 'next/image';
 import comeceIcon from '../../public/icone.svg';
 
 const Footer = () => {
+  const [expanded, setExpanded] = useState(false);
+  
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+    if (!expanded) {
+      window.scrollTo({ top: window.scrollY + 500, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <footer className="bg-preto">
-  <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div
-      className="flex flex-col items-center gap-4 rounded-lg bg-rosa p-6 shadow-lg sm:flex-row sm:justify-between"
-    >
+    <footer className="bg-preto aos" data-aos='fade-up'>
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 appear-animation">
+      <div
+          className={`flex flex-col items-center gap-4 rounded-lg bg-rosa shadow-lg sm:flex-row sm:justify-between  transition-all duration-500 ${expanded ? 'p-32 md:p-64' : 'p-6'}`}
+        >
       <strong className="text-xl text-bege sm:text-xl"> Faça sua próxima melhor decisão! </strong>
 
       <a
         className="inline-flex items-center gap-2 rounded-full border border-bege bg-rosa px-8 py-3 text-bege hover:bg-bege hover:text-rosa focus:outline-none focus:ring active:bg-rosa/90"
-        href="#"
+        onClick={toggleExpand}
       >
-        <span className="text-sm font-medium"> Lets Get Started </span>
+        <button className="text-sm font-medium"> Lets Get Started </button>
 
         <svg
           className="size-5 rtl:rotate-180"

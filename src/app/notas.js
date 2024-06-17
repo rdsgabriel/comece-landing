@@ -1,7 +1,7 @@
 
 const Notas = () => {
     return (
-      <section className="bg-[url('/Elipse-1.svg')] bg-cover bg-preto  text-bege" >
+      <section className=" bg-cover bg-preto  text-bege aos" data-aos='fade-up' >
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="mx-auto max-w-lg text-center">
     <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Olha o que eles dizem:</h2>
@@ -21,7 +21,7 @@ const Notas = () => {
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
@@ -66,7 +66,7 @@ fill="#ffffd7" stroke="none">
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
@@ -111,7 +111,7 @@ fill="#ffffd7" stroke="none">
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
@@ -156,7 +156,7 @@ fill="#ffffd7" stroke="none">
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
@@ -201,7 +201,7 @@ fill="#ffffd7" stroke="none">
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0
@@ -246,7 +246,7 @@ fill="#ffffd7" stroke="none">
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#ffffd7" stroke="none">
+fill="#ff3b4c" stroke="none">
 <path d="M2040 4153 c-228 -21 -366 -48 -513 -100 -448 -156 -771 -496 -1015
 -1069 -141 -330 -203 -655 -189 -984 14 -317 89 -546 277 -850 83 -133 103
 -158 147 -176 50 -21 1205 -20 1286 1 173 45 307 178 352 350 22 87 23 1262 0

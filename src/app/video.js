@@ -1,6 +1,6 @@
 const Video = () => {
   return (
-    <div className="bg-preto flex justify-center items-center py-10 font-franklinheavy">
+    <div className="bg-preto flex justify-center items-center py-10 font-franklinheavy aos" data-aos='fade-up' data-aos-offset="400">
       <div className="w-full md:w-10/12" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
         <iframe
           className="absolute top-0 left-0 w-full h-full rounded-lg"

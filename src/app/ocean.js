@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ocean = () => {
   return (
-    <div className="bg-preto py-4">
+    <div className="bg-preto py-4 aos" data-aos='fade-up'>
       <div className="flex flex-col md:flex-row mx-auto max-w-screen-lg w-full h-auto md:h-96 justify-around pt-5">
         <div className='flex-1 text-bege flex flex-col justify-center font-bold text-3xl md:text-4xl px-6 md:px-10'>
           <h1 className='whitespace-nowrap '>um oceano de</h1>

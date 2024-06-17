@@ -10,7 +10,7 @@ const Services = () => {
   };
 
   return (
-    <div className='bg-preto'>
+    <div className='bg-preto aos' data-aos='fade-up'>
      <div className="p-4 py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
      <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Nossos Serviços</h2>
      <div className="flex bg-preto">
