@@ -25,11 +25,10 @@ const useNumberAnimation = (initialNumber, finalNumber, intervalTime = 100) => {
   return number;
 };
 
-const Mid = () => {
+const Mid = ({toggleExpand, expanded}) => {
   const number1 = useNumberAnimation(0, 14, 100);
   const number2 = useNumberAnimation(0, 200, 6);
   const number3 = useNumberAnimation(0, 52, 25);
-
   return (
     <div className="p-4 bg-[url('/teste-mobile.svg')] bg-cover md:bg-[url('/teste.svg')]">
       <div className="container mx-auto max-w-screen-lg items-center py-12 md:py-24">
@@ -66,7 +65,8 @@ const Mid = () => {
 
         <div className="mt-12 text-center">
       <a
-        href="#"
+      onClick={toggleExpand}
+        href="#Lets"
         className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400 number-animation tracking-tight leading-tight"
       >
         Comece agora

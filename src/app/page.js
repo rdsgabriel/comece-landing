@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from "./header";
@@ -17,17 +17,26 @@ export default function Home() {
     AOS.init({ duration: 1600, offset:200, once: true });
   }, []);
 
+  const [expanded, setExpanded] = useState(false);
+  
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+    if (!expanded) {
+      window.scrollTo({ top: window.scrollY + 500, behavior: 'smooth' });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-preto">
       <Header/>
-      <Mid/>
+      <Mid toggleExpand={toggleExpand} expanded={expanded}/>
       <Ocean />
       <Video/>
       <Services/>
       <Clientes/>
-      <Notas/>
+      <Notas toggleExpand={toggleExpand} expanded={expanded}/>
       <Time/>
-      <Footer/>
+      <Footer toggleExpand={toggleExpand} expanded={expanded}/>
     </main>
   );
 }

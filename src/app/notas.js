@@ -1,5 +1,5 @@
 
-const Notas = () => {
+const Notas = ({toggleExpand, expanded}) => {
     return (
       <section className=" bg-cover bg-preto  text-bege aos" data-aos='fade-up' >
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -284,8 +284,9 @@ fill="#ff3b4c" stroke="none">
     </div>
 
     <div className="mt-12 text-center">
-    <a
-        href="#"
+    <a  
+        onClick={toggleExpand}
+        href="#Lets"
         className="inline-block rounded-full bg-preto bg-opacity-70 border border-rosa px-8 py-3 text-sm font-medium text-bege transition hover:bg-rosa focus:outline-none focus:ring focus:ring-red-400"
       >
         Comece agora

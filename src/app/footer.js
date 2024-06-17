@@ -2,47 +2,134 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import comeceIcon from '../../public/icone.svg';
+import comeceIcon2 from '../../public/icone2.svg';
+import Mid from './mid';
 
-const Footer = () => {
-  const [expanded, setExpanded] = useState(false);
+const Footer = ({toggleExpand, expanded}) => {
   
-  const toggleExpand = () => {
-    setExpanded(!expanded);
-    if (!expanded) {
-      window.scrollTo({ top: window.scrollY + 500, behavior: 'smooth' });
-    }
-  };
-
+  
   return (
     <footer className="bg-preto aos" data-aos='fade-up'>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 appear-animation">
-      <div
-          className={`flex flex-col items-center gap-4 rounded-lg bg-rosa shadow-lg sm:flex-row sm:justify-between  transition-all duration-500 ${expanded ? 'p-32 md:p-64' : 'p-6'}`}
-        >
-      <strong className="text-xl text-bege sm:text-xl"> Faça sua próxima melhor decisão! </strong>
-
-      <a
-        className="inline-flex items-center gap-2 rounded-full border border-bege bg-rosa px-8 py-3 text-bege hover:bg-bege hover:text-rosa focus:outline-none focus:ring active:bg-rosa/90"
-        onClick={toggleExpand}
-      >
-        <button className="text-sm font-medium"> Lets Get Started </button>
-
-        <svg
-          className="size-5 rtl:rotate-180"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
+      <div className='hidden'>
+      </div>
+      <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 appear-animation'>
+      {expanded ? (
+        <div className='transition-all duration-1000 ease-in-out'>
+          <div className="relative">
+  <button
+    className="absolute top-0 right-0 text-sm font-medium text-bege pr-3 pt-2"
+    onClick={toggleExpand}
+  >
+    <svg
+      className="h-4 w-4 md:h-6 md:w-5 transform rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </button>
+</div>
+<div  className="flex items-center gap-4 rounded-lg bg-rosa shadow-lg transition-all duration-500 p-6 md:p-20">
+  <div className='md:w-1/2 hidden md:flex pr-4'>
+  <Image
+            src={comeceIcon2}
+            alt="Logo"
+            width={450}
+            height={450}
           />
-        </svg>
-      </a>
-    </div>
+  </div>
+  <div className='md:w-1/2'>
+  <h3 className="text-2xl font-extrabold tracking-tight leading-tight text-center text-bege md:text-4xl pb-4 ">
+      Entraremos em contato o mais rápido possível.
+    </h3>
+  <form className="flex flex-col items-center gap-4 w-full">
+    <input
+      type="text"
+      placeholder="Nome completo"
+      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+    />
+    <input
+      type="email"
+      placeholder="Digite seu email"
+      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+    />
+    <input
+      type="tel"
+      placeholder="Digite seu número de telefone"
+      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+    />
+    <form class="w-full">
+      <label for="countries" class="block mb-2 text-lg font-bold text-bege">Qual o seu segmento?</label>
+      <select id="segmentos" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-full focus:ring-rosa focus:border-rosa block w-full p-2.5 ">
+        <option selected>Selecione um segmento</option>
+        <option value="US">Serviço</option>
+        <option value="CA">Varejo</option>
+        <option value="FR">Indústria</option>
+        <option value="DE">E-commerce</option>
+        <option value="US">Food Service</option>
+        <option value="CA">Educação</option>
+        <option value="FR">Imobiliário</option>
+        <option value="DE">SAAS</option>
+        <option value="US">Finanças</option>
+        <option value="CA">Franquia</option>
+        <option value="FR">Telecom</option>
+        <option value="DE">Energia Solar</option>
+        <option value="US">Turismo</option>
+        <option value="CA">Startup</option>
+        <option value="FR">Outro</option>
+      </select>
+    </form>
+
+<label for="message" class="block text-lg text-bege pt-2 font-bold">Sua mensagem</label>
+<textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+    <button
+      type="submit"
+      className="inline-flex items-center gap-2 rounded-full border border-bege bg-rosa px-8 py-1 text-bege hover:bg-bege hover:text-rosa focus:outline-none focus:ring active:bg-rosa/90"
+    >
+      Enviar
+    </button>
+  </form>
+  </div>
+    
+</div>
+
+        </div>
+       
+       
+        ) : (
+          <div className="flex flex-col items-center gap-4 rounded-lg bg-rosa shadow-lg sm:flex-row sm:justify-between transition-all duration-500 p-6">
+            <strong className="text-xl text-bege sm:text-xl">Faça sua próxima melhor decisão!</strong>
+            <a
+            id='lets'
+              className="inline-flex items-center gap-2 rounded-full border border-bege bg-rosa px-8 py-3 text-bege hover:bg-bege hover:text-rosa focus:outline-none focus:ring active:bg-rosa/90"
+              onClick={toggleExpand}
+            >
+              <button className="text-sm font-medium">Lets Get Started</button>
+              <svg
+                className="size-5 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        )}
 
     <div className="mt-16 flex justify-evenly md:grid md:grid-cols-1 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="text-center sm:text-left">

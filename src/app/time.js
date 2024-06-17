@@ -1,6 +1,6 @@
 const Time = () => {
   return (
-    <div className="bg-preto aos" data-aos='fade-up'>
+    <div className="bg-preto aos" data-aos='fade-up' data-aos-offset="50">
       <h1 className="text-center p-10 text-4xl text-bege font-bold tracking-tight leading-tight">Conheça nosso time</h1>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 p-5">
       <div className="rounded-full pb-4" data-aos='flip-right'>
@@ -88,7 +88,7 @@ const Time = () => {
   <li className="p-1 leading-none">
     <a href="#" className="text-xs hover:text-rosatext-center rounded-full pr-1 hover:text-rosa"> Behance </a>
     <a href="#" className="text-xs hover:text-rosatext-center rounded-full pr-1 hover:text-rosa"> Behance </a>
-    <a href="#" className="text-xs hover:text-rosatext-center rounded-full hover:text-rosa"> Behance </a>
+    <a id="Lets" href="#" className="text-xs hover:text-rosatext-center rounded-full hover:text-rosa"> Behance </a>
   </li>
 </ul>
 </div>
