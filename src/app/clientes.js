@@ -1,6 +1,6 @@
 const Clientes = () => {
   return (
-    <section className=" bg-preto aos" data-aos='fade-up' >
+    <section className=" bg-preto aos border-t border-opacity-10 border-dashed border-bege w-full" data-aos='fade-up' >
     <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Veja quem já trabalhou conosco</h2>
         <div className="grid grid-cols-2 gap-8 text-bege sm:gap-12 md:grid-cols-3 lg:grid-cols-6">

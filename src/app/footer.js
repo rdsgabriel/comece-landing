@@ -58,7 +58,7 @@ const Footer = ({toggleExpand, expanded}) => {
   };
 
   return (
-    <footer className="bg-preto aos" data-aos='fade-up'>
+    <footer className="bg-preto aos " data-aos='fade-up'>
        
       <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 appear-animation'>
       {expanded ? (
