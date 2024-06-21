@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from 'next/image';
 import comeceIcon from '../../public/icone.svg';
 import comeceIcon2 from '../../public/icone2.svg';
@@ -35,20 +35,31 @@ const Footer = ({toggleExpand, expanded}) => {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data);
-        console.log('success')
+        console.log('Formulário enviado com sucesso.')
         setStatus('success')
       })
       .catch(error => {
-        console.error('Erro:', error);
         setStatus('error');
       });
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (status === 'success') {
+      setIsModalOpen(true);
+    } else {
+      setIsModalOpen(false);
+    }
+  }, [status]);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <footer className="bg-preto aos" data-aos='fade-up'>
-      <div className='hidden'>
-      </div>
+       
       <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 appear-animation'>
       {expanded ? (
         <div className='transition-all duration-1000 ease-in-out'>
@@ -74,6 +85,26 @@ const Footer = ({toggleExpand, expanded}) => {
   </button>
 </div>
 <div  className="flex items-center gap-4 rounded-lg bg-rosa shadow-lg transition-all duration-500 p-6 md:p-20">
+{isModalOpen && <div id="successModal" tabIndex="-1" aria-hidden="true" className="bg-preto bg-opacity-70 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 bottom-0 justify-center flex w-full h-full animate-fade-up duration-500 pt-64 md:pt-80">
+  <div className="relative p-4 w-full max-w-md h-full md:h-auto">
+    <div className="relative p-4 text-center bg-gray-100 rounded-lg shadow dark:bg-gray-800 sm:p-5">
+      <a type="button" className="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+        onClick={closeModal}
+        href='https://www.instagram.com/agencia_comece/'>
+        <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
+        </svg>
+      </a>
+      <div className="w-12 h-12 rounded-full bg-green-100 p-2 flex items-center justify-center mx-auto mb-3.5">
+        <svg aria-hidden="true" className="w-8 h-8 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+        </svg>
+      </div>
+      <p className="mb-4 text-lg font-semibold text-gray-900">Formulário enviado com sucesso!</p>
+      <p className='text-gray-700 font-medium'>Agora é só aguardar nosso time da <span className='text-rosa font-semibold'>Comece</span> entrar em contato.</p>
+    </div>
+  </div>
+</div>}
   <div className='md:w-1/2 hidden md:flex pr-4'>
   <Image
             src={comeceIcon2}
@@ -87,7 +118,6 @@ const Footer = ({toggleExpand, expanded}) => {
       Entraremos em contato o mais rápido possível.
     </h3>
   <form className="flex flex-col items-center gap-4 w-full" onSubmit={handleSubmit}>
-  
     <input
       type="text"
         required
@@ -106,15 +136,18 @@ const Footer = ({toggleExpand, expanded}) => {
         className="border border-bege rounded-full px-4 py-2 text-preto w-full"
         value={formData.email}
         onChange={handleChange}
+         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
     />
     <input
         required
        type="tel"
        name="phoneNumber"
-       placeholder="Digite seu número de telefone"
+       placeholder="Digite seu DDD + número de telefone"
        className="border border-bege rounded-full px-4 py-2 text-preto w-full"
        value={formData.phoneNumber}
        onChange={handleChange}
+       maxLength={12}
+        pattern="[0-9]*"
     />
     <form class="w-full">
       <label for="segment" class="block mb-2 text-lg font-bold text-bege text-center">Qual o seu segmento?</label>
@@ -157,7 +190,7 @@ const Footer = ({toggleExpand, expanded}) => {
     >
       Enviar
     </button>
-    {status === 'success' && <p className="text-bege font-black text-center mt-4">Formulário enviado com sucesso!</p>}
+
   {status === 'error' && <p className="text-bege font-black mt-4 text-center ">Ocorreu um erro ao enviar o formulário. Tente novamente.</p>}
   </form>
   </div>
@@ -401,4 +434,3 @@ const Footer = ({toggleExpand, expanded}) => {
 };
 
 export default Footer;
-

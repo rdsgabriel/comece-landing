@@ -12,7 +12,7 @@ const Services = () => {
 
    <div className="relative overflow-hidden bg-preto pt-20 pb-32 space-y-24">
    <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-bege  md:text-4xl ">Nossos serviços</h2>
-    <div className="relative aos"  data-aos='fade-down-right'>
+    <div className="relative aos" data-aos='fade-up'>
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
 
@@ -59,7 +59,7 @@ const Services = () => {
 
 
 
-    <div className="relative aos"  data-aos='fade-down-left'>
+    <div className="relative aos" data-aos='fade-up' >
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
                 <div>
@@ -104,7 +104,7 @@ const Services = () => {
 
 
 
-    <div className="relative aos"  data-aos='fade-down-right'>
+    <div className="relative aos"  data-aos='fade-up'>
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
                 <div>

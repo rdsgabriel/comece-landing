@@ -63,3 +63,22 @@ body {
   animation: fade-in-down 0.05s ease-out;
   -webkit-animation: fade-in-down 0.05s ease-out;
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out;
+}
