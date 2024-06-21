@@ -90,6 +90,7 @@ const Footer = ({toggleExpand, expanded}) => {
   
     <input
       type="text"
+        required
           name="fullName"
           placeholder="Nome completo"
           className="border border-bege rounded-full px-4 py-2 text-preto w-full"
@@ -98,6 +99,7 @@ const Footer = ({toggleExpand, expanded}) => {
           
     />
     <input
+      required
         type="email"
         name="email"
         placeholder="Digite seu email"
@@ -106,6 +108,7 @@ const Footer = ({toggleExpand, expanded}) => {
         onChange={handleChange}
     />
     <input
+      required
        type="tel"
        name="phoneNumber"
        placeholder="Digite seu número de telefone"
