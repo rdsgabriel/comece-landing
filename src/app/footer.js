@@ -99,7 +99,7 @@ const Footer = ({toggleExpand, expanded}) => {
           
     />
     <input
-      required
+        required
         type="email"
         name="email"
         placeholder="Digite seu email"
@@ -108,7 +108,7 @@ const Footer = ({toggleExpand, expanded}) => {
         onChange={handleChange}
     />
     <input
-      required
+        required
        type="tel"
        name="phoneNumber"
        placeholder="Digite seu número de telefone"
