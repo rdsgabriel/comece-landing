@@ -154,7 +154,7 @@ const Footer = ({toggleExpand, expanded}) => {
     >
       Enviar
     </button>
-    {status === 'success' && <p className="text-green-500 text-center mt-4">Formulário enviado com sucesso!</p>}
+    {status === 'success' && <p className="text-bege font-black text-center mt-4">Formulário enviado com sucesso!</p>}
   {status === 'error' && <p className="text-bege font-black mt-4 text-center ">Ocorreu um erro ao enviar o formulário. Tente novamente.</p>}
   </form>
   </div>
