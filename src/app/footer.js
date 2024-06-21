@@ -121,21 +121,21 @@ const Footer = ({toggleExpand, expanded}) => {
             value={formData.segment}
             onChange={handleChange}>
        <option value="" disabled>Selecione um segmento</option>
-            <option value="Serviço">Serviço</option>
-            <option value="Varejo">Varejo</option>
-            <option value="Indústria">Indústria</option>
-            <option value="E_commerce">E-commerce</option>
-            <option value="Food_Service">Food Service</option>
-            <option value="Educação">Educação</option>
-            <option value="Imobiliário">Imobiliário</option>
+            <option value="SERVICO">Serviço</option>
+            <option value="VAREJO">Varejo</option>
+            <option value="INDUSTRIA">Indústria</option>
+            <option value="ECOMMERCE">E-commerce</option>
+            <option value="FOOD_SERVICE">Food Service</option>
+            <option value="EDUCACAO">Educação</option>
+            <option value="IMOBILIARIO">Imobiliário</option>
             <option value="SAAS">SAAS</option>
-            <option value="Finanças">Finanças</option>
-            <option value="Franquia">Franquia</option>
-            <option value="Telecom">Telecom</option>
-            <option value="Energia_Solar">Energia Solar</option>
-            <option value="Turismo">Turismo</option>
-            <option value="Startup">Startup</option>
-            <option value="Outro">Outro</option>
+            <option value="FINANCAS">Finanças</option>
+            <option value="FRANQUIA">Franquia</option>
+            <option value="TELECOM">Telecom</option>
+            <option value="ENERGIA_SOLAR">Energia Solar</option>
+            <option value="TURISMO">Turismo</option>
+            <option value="STARTUP">Startup</option>
+            <option value="OUTRO">Outro</option>
       </select>
     </form>
 
