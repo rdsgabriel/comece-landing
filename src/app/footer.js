@@ -3,11 +3,48 @@ import React, {useState} from 'react';
 import Image from 'next/image';
 import comeceIcon from '../../public/icone.svg';
 import comeceIcon2 from '../../public/icone2.svg';
-import Mid from './mid';
+
 
 const Footer = ({toggleExpand, expanded}) => {
-  
-  
+  const [formData, setFormData] = useState({
+    email: '',
+    fullName: '',
+    phoneNumber: '',
+    segment: '',
+    description: ''
+  });
+
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch('https://mail-comece.onrender.com/api/v1/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        console.log('success')
+        setStatus('success')
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+        setStatus('error');
+      });
+  };
+
   return (
     <footer className="bg-preto aos" data-aos='fade-up'>
       <div className='hidden'>
@@ -49,46 +86,67 @@ const Footer = ({toggleExpand, expanded}) => {
   <h3 className="text-2xl font-extrabold tracking-tight leading-tight text-center text-bege md:text-4xl pb-4 ">
       Entraremos em contato o mais rápido possível.
     </h3>
-  <form className="flex flex-col items-center gap-4 w-full">
+  <form className="flex flex-col items-center gap-4 w-full" onSubmit={handleSubmit}>
+  
     <input
       type="text"
-      placeholder="Nome completo"
-      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+          name="fullName"
+          placeholder="Nome completo"
+          className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+          value={formData.fullName}
+          onChange={handleChange}
+          
     />
     <input
-      type="email"
-      placeholder="Digite seu email"
-      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+        type="email"
+        name="email"
+        placeholder="Digite seu email"
+        className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+        value={formData.email}
+        onChange={handleChange}
     />
     <input
-      type="tel"
-      placeholder="Digite seu número de telefone"
-      className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+       type="tel"
+       name="phoneNumber"
+       placeholder="Digite seu número de telefone"
+       className="border border-bege rounded-full px-4 py-2 text-preto w-full"
+       value={formData.phoneNumber}
+       onChange={handleChange}
     />
     <form class="w-full">
-      <label for="countries" class="block mb-2 text-lg font-bold text-bege">Qual o seu segmento?</label>
-      <select id="segmentos" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-full focus:ring-rosa focus:border-rosa block w-full p-2.5 ">
-        <option selected>Selecione um segmento</option>
-        <option value="US">Serviço</option>
-        <option value="CA">Varejo</option>
-        <option value="FR">Indústria</option>
-        <option value="DE">E-commerce</option>
-        <option value="US">Food Service</option>
-        <option value="CA">Educação</option>
-        <option value="FR">Imobiliário</option>
-        <option value="DE">SAAS</option>
-        <option value="US">Finanças</option>
-        <option value="CA">Franquia</option>
-        <option value="FR">Telecom</option>
-        <option value="DE">Energia Solar</option>
-        <option value="US">Turismo</option>
-        <option value="CA">Startup</option>
-        <option value="FR">Outro</option>
+      <label for="segment" class="block mb-2 text-lg font-bold text-bege text-center">Qual o seu segmento?</label>
+      <select id="segment"
+            name="segment"
+            className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-full focus:ring-rosa focus:border-rosa block w-full p-2.5"
+            value={formData.segment}
+            onChange={handleChange}>
+       <option value="" disabled>Selecione um segmento</option>
+            <option value="Serviço">Serviço</option>
+            <option value="Varejo">Varejo</option>
+            <option value="Indústria">Indústria</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Food Service">Food Service</option>
+            <option value="Educação">Educação</option>
+            <option value="Imobiliário">Imobiliário</option>
+            <option value="SAAS">SAAS</option>
+            <option value="Finanças">Finanças</option>
+            <option value="Franquia">Franquia</option>
+            <option value="Telecom">Telecom</option>
+            <option value="Energia Solar">Energia Solar</option>
+            <option value="Turismo">Turismo</option>
+            <option value="Startup">Startup</option>
+            <option value="Outro">Outro</option>
       </select>
     </form>
 
-<label for="message" class="block text-lg text-bege pt-2 font-bold">Sua mensagem</label>
-<textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Escreva sua mensagem aqui..."></textarea>
+<label for="description" class="block text-lg text-bege pt-2 font-bold">Se apresente rapidinho pra gente :)</label>
+<textarea id="description"
+            name="description"
+            rows="4"
+            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
+            placeholder="Escreva sua mensagem aqui..."
+            value={formData.description}
+            onChange={handleChange}></textarea>
 
     <button
       type="submit"
@@ -96,6 +154,8 @@ const Footer = ({toggleExpand, expanded}) => {
     >
       Enviar
     </button>
+    {status === 'success' && <p className="text-green-500 text-center mt-4">Formulário enviado com sucesso!</p>}
+  {status === 'error' && <p className="text-bege font-black mt-4 text-center ">Ocorreu um erro ao enviar o formulário. Tente novamente.</p>}
   </form>
   </div>
     
