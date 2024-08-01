@@ -9,12 +9,12 @@ const Time = () => {
 <div className="flex items-center gap-4">
 <img
   alt=""
-  src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/400645410_265013589526906_5206238630815654320_n.jpg?ccb=11-4&oh=01_Q5AaIHpm0nJu1j9b9hPg_Et58CnaMmS2mOtxIpb4oXXAwzmA&oe=667DA118&_nc_sid=e6ed6c&_nc_cat=105"
+  src="https://img.freepik.com/free-vector/hand-drawn-side-profile-cartoon-illustration_23-2150503804.jpg"
   className="size-16 rounded-full object-cover"
 />
 
 <div className="text-bege">
-<h3 className="text-lg">Gabriel Rodrigues</h3>
+<h3 className="text-lg">John Lennon</h3>
 
 <div className="flow-root">
 <ul className="-m-1 flex flex-wrap">
@@ -41,12 +41,12 @@ const Time = () => {
 <div className="flex items-center gap-4">
 <img
   alt=""
-  src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/400645410_265013589526906_5206238630815654320_n.jpg?ccb=11-4&oh=01_Q5AaIHpm0nJu1j9b9hPg_Et58CnaMmS2mOtxIpb4oXXAwzmA&oe=667DA118&_nc_sid=e6ed6c&_nc_cat=105"
+  src="https://img.freepik.com/vetores-gratis/ilustracao-de-desenho-animado-de-perfil-lateral-desenhada-a-mao_23-2150517168.jpg"
   className="size-16 rounded-full object-cover"
 />
 
 <div className="text-bege">
-<h3 className="text-lg">Gabriel Rodrigues</h3>
+<h3 className="text-lg">John Lennon</h3>
 
 <div className="flow-root">
 <ul className="-m-1 flex flex-wrap">
@@ -73,12 +73,12 @@ const Time = () => {
 <div className="flex items-center gap-4">
 <img
   alt=""
-  src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/400645410_265013589526906_5206238630815654320_n.jpg?ccb=11-4&oh=01_Q5AaIHpm0nJu1j9b9hPg_Et58CnaMmS2mOtxIpb4oXXAwzmA&oe=667DA118&_nc_sid=e6ed6c&_nc_cat=105"
+  src="https://img.freepik.com/vetores-gratis/ilustracao-de-desenho-animado-de-perfil-lateral-desenhada-a-mao_23-2150503812.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user"
   className="size-16 rounded-full object-cover"
 />
 
 <div className="text-bege">
-<h3 className="text-lg">Gabriel Rodrigues</h3>
+<h3 className="text-lg">John Lennon</h3>
 
 <div className="flow-root">
 <ul className="-m-1 flex flex-wrap">
@@ -105,12 +105,12 @@ const Time = () => {
 <div className="flex items-center gap-4">
 <img
   alt=""
-  src="https://media-gig4-2.cdn.whatsapp.net/v/t61.24694-24/400645410_265013589526906_5206238630815654320_n.jpg?ccb=11-4&oh=01_Q5AaIHpm0nJu1j9b9hPg_Et58CnaMmS2mOtxIpb4oXXAwzmA&oe=667DA118&_nc_sid=e6ed6c&_nc_cat=105"
+  src="https://img.freepik.com/free-vector/hand-drawn-side-profile-cartoon-illustration_23-2150503821.jpg"
   className="size-16 rounded-full object-cover"
 />
 
 <div className="text-bege">
-<h3 className="text-lg">Gabriel Rodrigues</h3>
+<h3 className="text-lg">John Lennon</h3>
 
 <div className="flow-root">
 <ul className="-m-1 flex flex-wrap">

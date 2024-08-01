@@ -98,7 +98,7 @@ fill="#ff3b4c" stroke="none">
         </p>
 
         </div>
-        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Facebook</h2>
+        <h2 className="pl-64 pt-6 text-xl font-bold text-bege ml-2 ">Face</h2>
         
       </div>
 
@@ -233,7 +233,7 @@ fill="#ff3b4c" stroke="none">
         </p>
 
         </div>
-        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Caralho</h2>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Bingo</h2>
         
       </div>
 
@@ -278,7 +278,7 @@ fill="#ff3b4c" stroke="none">
         </p>
 
         </div>
-        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Porra</h2>
+        <h2 className="pl-60 pt-6 text-xl font-bold text-bege ml-2 ">Elit</h2>
         
       </div>
     </div>
